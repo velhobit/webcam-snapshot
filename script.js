@@ -26,8 +26,8 @@ function takeSnapShot(){
 	
 	//Criando um canvas que vai guardar a imagem temporariamente
 	var canvas = document.createElement('canvas');
-	canvas.width = 640;
-	canvas.height = 480;
+	canvas.width = video.videoWidth;
+	canvas.height = video.videoHeight;
 	var ctx = canvas.getContext('2d');
 	
 	//Desnehando e convertendo as minensões
